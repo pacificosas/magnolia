@@ -8,4 +8,60 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('Pacifica test country 1')
+   console.log('Pacifica is READY !!!')
+
+   function btn(props){
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    var container=document.createElement('div')
+    container.style.position="fixed"
+    container.style.bottom="25%"
+    container.style.right="0"
+    container.style.zIndex="9999"    
+
+    var anchor=document.createElement("a")
+    anchor.href=props.href
+    anchor.target="_blank"
+
+    var image=document.createElement("img")
+    image.src=props.image
+
+
+
+    var cssHandler=function(e){
+        console.log(props.imageDesktopWidth)
+        if(e.matches){
+            image.style.width=props.imageMobileWidth;
+        }else{
+            image.style.width=props.imageDesktopWidth;
+        }
+    }
+
+    var mediaquery=window.matchMedia("(max-width: 768px)")
+    mediaquery.addListener(cssHandler.bind(this))
+    // window.addEventListener('resize',function(){cssHandler(mediaquery)})
+    cssHandler(mediaquery)
+
+    if(!isMobile){
+        anchor.append(image)
+        container.append(anchor)
+        document.querySelector("body").append(container)
+    }
+
+}
+
+var path = location.pathname;
+var countries = ['co', 'ec', 'pe'];
+var currentCountry = '';
+countries.forEach(ct => {
+    if(path.includes(`avon-${ct}`) || path.includes(`${ct}-home`)){
+        currentCountry = ct
+    }
+})
+
+
+btn({
+  href:`https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
+  image:"/dam/cpe-assets/static/images/icono_chat-avon.png",
+  imageDesktopWidth:"7.5rem",
+  imageMobileWidth:"6rem"
+})
