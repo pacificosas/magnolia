@@ -10,7 +10,46 @@
 
    console.log('Pacifica is READY !!!')
 
-   function btn(props){
+  var currentCountry = getCurrentCountry();
+if(currentCountry !== 'cl'){
+    btn({
+      href:`https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
+      image:"/dam/cpe-assets/static/images/icono_chat-avon.png",
+      imageDesktopWidth:"7.5rem",
+      imageMobileWidth:"6rem"
+    });
+}
+
+ReplaceLoginButton(currentCountry);
+
+//-----------------------------------------------------------------------------------------------------------
+
+//Función que obtiene el país
+function getCurrentCountry(){
+    var path = location.pathname;
+    var countries = ['co', 'ec', 'pe', 'cl'];
+    var currentCountry = '';
+    countries.forEach(ct => {
+        if(path.includes(`avon-${ct}`) || path.includes(`${ct}-home`)){
+            currentCountry = ct
+        }
+    })
+    return currentCountry;
+}
+
+function GetLoginButtonLabel(country){
+    switch (country) {
+        case 'co':
+        case 'ec':
+        case 'pe':
+            return 'REPRESENTANTE / MI ESPACIO AVON';
+        case 'cl':
+            return 'CONSEJERA / MI ESPACIO AVON';           
+    }
+}
+
+//Función para agregar botón flotante
+function btn(props){
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     var container=document.createElement('div')
     container.style.position="fixed"
@@ -46,22 +85,21 @@
         container.append(anchor)
         document.querySelector("body").append(container)
     }
-
+    
 }
 
-var path = location.pathname;
-var countries = ['co', 'ec', 'pe'];
-var currentCountry = '';
-countries.forEach(ct => {
-    if(path.includes(`avon-${ct}`) || path.includes(`${ct}-home`)){
-        currentCountry = ct
+//Función para reemplazar el botón de login
+function ReplaceLoginButton(country){
+    var tag = window.screen.width <= 766 ? 'div' : 'li';
+    var container = $(`${tag}[ng-controller="loginCtrl"]`)[0];
+    var loginRoot = '';
+    var label = GetLoginButtonLabel(country);
+    if(country === 'co'){
+        loginRoot = 'http://avon.com.co';
     }
-})
+    else{
+        loginRoot = `https://www.${country}.avon.com`
+    }
+    container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
+}
 
-
-btn({
-  href:`https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
-  image:"/dam/cpe-assets/static/images/icono_chat-avon.png",
-  imageDesktopWidth:"7.5rem",
-  imageMobileWidth:"6rem"
-})
