@@ -10,7 +10,8 @@
 
    console.log('Pacifica is READY !!!')
 
-  var currentCountry = getCurrentCountry();
+window.onload = (event) => {
+var currentCountry = getCurrentCountry();
 if(currentCountry !== 'cl'){
     btn({
       href:`https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
@@ -21,6 +22,7 @@ if(currentCountry !== 'cl'){
 }
 
 ReplaceLoginButton(currentCountry);
+};
 
 //-----------------------------------------------------------------------------------------------------------
 
