@@ -8,9 +8,9 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('Pacifica is READY !!!')
+   console.log('Pacifica is READY again!!!')
 
-window.onload = (event) => {
+$( document ).ready(function() {
 var currentCountry = getCurrentCountry();
 if(currentCountry !== 'cl'){
     btn({
@@ -104,4 +104,5 @@ function ReplaceLoginButton(country){
     }
     container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
 }
+
 
