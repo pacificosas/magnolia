@@ -6,7 +6,7 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PIPE */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Rufina:wght@400;700&display=swap');
@@ -116,7 +116,7 @@ body > div.content-wrapper > div > div > div.col-lg-3.col-md-3.col-sm-12.col-xs-
 
 body > footer > div > div.full-footer > div.hidden-xs.main-footer-content > div > div > div.col-sm-4.col-lg-5.btn-group-vertical.rep > button-with-image > a > button {
     border: solid 1px white !important;
-    background: url(/dam/cpe-assets/static/images/arrow-right.png) 200px 11px no-repeat !important;
+    background: url(https://cdn.jsdelivr.net/gh/pacificosas/magnolia@1/arrow-right.png) 200px 11px no-repeat !important;
 }
 .rep .btn-rep{
     height: 66px !important;
