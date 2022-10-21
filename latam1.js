@@ -8,7 +8,7 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('Pacifica is READY again!!!')
+   console.log('Pacifica is READY Oct 21!!!')
 
 $( document ).ready(function() {
 var currentCountry = getCurrentCountry();
@@ -22,7 +22,7 @@ if(currentCountry !== 'cl'){
 }
 
 ReplaceLoginButton(currentCountry);
-};
+});
 
 //-----------------------------------------------------------------------------------------------------------
 
@@ -104,6 +104,7 @@ function ReplaceLoginButton(country){
     }
     container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
 }
+
 
 
 
