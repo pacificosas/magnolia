@@ -8,9 +8,9 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('Pacifica is READY Oct 21!!!')
+   console.log('PIPE - Pacifica!!!')
 
-$( document ).ready(function() {
+document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
 if(currentCountry !== 'cl'){
     btn({
@@ -104,8 +104,3 @@ function ReplaceLoginButton(country){
     }
     container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
 }
-
-
-
-
-
