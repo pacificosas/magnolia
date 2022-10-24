@@ -6,15 +6,16 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: PIPE */
+   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Rufina:wght@400;700&display=swap');
 @import 'https://cdn.jsdelivr.net/gh/pacificosas/font-zonapro@1/zonapro.css';
 
-/*Elementos de Magnolia*/
+/*Elementos de Magnolia : PIPE*/
 
-body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > div > div > div:nth-child(1){
+body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > div > div > div:nth-child(1),
+body > header > div.container.container-top-section > nav > ul > li > div > div.subnav-col.subnav-col-grey{
     display:none !important;
     
 }
@@ -309,6 +310,7 @@ h5{
 
 p, ul, ::-webkit-meter-optimum-value{
     font-family: 'Montserrat', sans-serif !important;
+    font-size: 15px !important;
 }
 p{
    margin-bottom: 1rem !important; 
@@ -345,7 +347,7 @@ hr{
     text-align: left;
 }
 .right{
-    text-align: left;
+    text-align: right;
 }
 .justify{
     text-align: justify;
@@ -381,6 +383,30 @@ hr{
     width: 100%;
   }
 }
+
+/*Premios*/
+.prem-item {
+    max-width: 300px;
+    display: block;
+    width: 90%;
+    margin: 20px auto 30px;
+    background-color: #F1F1F1;
+    min-height: 280px;
+}
+
+.prem-item img {
+    display: block;
+    border-radius: 40px 0 0;
+    width: 100% !important;
+}
+
+.prem-item p {
+    text-align: center;
+    font-size: 12px !important;
+    padding: 10px 15px;
+    min-height: 82px
+}
+/-------/
 
 /*-------*/
 
@@ -463,7 +489,7 @@ hr{
     height: 100%;
     background-color: unset;
     transition: all 0.5s ease-in-out;
-    min-height: 250px;
+    min-height: 200px;
 }
 
 .history-grid span:hover{
@@ -872,3 +898,4 @@ hr{
     /*-------------------*/
 }
 /*-------------*/
+
