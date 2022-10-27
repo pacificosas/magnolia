@@ -8,19 +8,17 @@
 
    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Rufina:wght@400;700&display=swap');
 @import 'https://cdn.jsdelivr.net/gh/pacificosas/font-zonapro@1/zonapro.css';
 
-/*Elementos de Magnolia : PIPE + Global*/
+/*Magnolia is the future !!!*/
 
 body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > div > div > div:nth-child(1),
 body > header > div.container.container-top-section > nav > ul > li > div > div.subnav-col.subnav-col-grey,
 body > div.content-wrapper > div > div > div.col-lg-3.col-md-3.col-sm-12.col-xs-12 > left-nav > div > section.col-lg-12.col-sm-5.col-xs-12.ng-scope > h4,
 body > div.content-wrapper > div > div > div.col-lg-3.col-md-3.col-sm-12.col-xs-12 > left-nav > div > section.col-lg-12.col-sm-5.col-xs-12.ng-scope > hr,
 .left-nav h3::after{
-    display:none !important;
-    
+    display:none !important;   
 }
 #login > div:nth-child(4){
     display: none !important;
@@ -31,7 +29,19 @@ body > div.content-wrapper > div > div > div.col-lg-3.col-md-3.col-sm-12.col-xs-
 #login > div.col-sm-6.div-line-left{
     width: 100% !important;
 }
-
+body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > div{
+    min-height: 71px !important;
+    display: block !important;
+    padding-top: 6% !important;
+    font-family: 'Montserrat' !important;
+    font-weight: 600 !important;
+}
+body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > div > a{
+    background-color: #ed008c !important;
+    padding: 4% !important;
+    color: white !important;
+    border-radius: 4px !important;
+}
 nav li{
     font-family: 'zonaPro' !important;
 }
@@ -193,6 +203,9 @@ footer .contact-us-container:after {
 @media screen and (max-width:767px){
     #login > div:nth-child(4) {
     display: block !important;
+    }
+    .hamburger-navigation-container .hamburger-contact-list {
+    display: none !important;
     }
     body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > nav > div:nth-child(1),
     body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > nav > div:nth-child(7),
@@ -902,6 +915,3 @@ hr{
     /*-------------------*/
 }
 /*-------------*/
-
-
-
