@@ -8,7 +8,7 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('PIPE - Pacifica!!!')
+   console.log('PIPE - Magnoliando!!!')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
@@ -46,7 +46,7 @@ function GetLoginButtonLabel(country){
         case 'pe':
             return 'REPRESENTANTE / MI ESPACIO AVON';
         case 'cl':
-            return 'CONSEJERA / MI ESPACIO AVON';           
+            return 'REPRESENTANTE / MI ESPACIO AVON';           
     }
 }
 

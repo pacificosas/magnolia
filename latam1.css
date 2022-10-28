@@ -8,16 +8,19 @@
 
    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+/*Pacifica: We are the champions !!!*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Rufina:wght@400;700&display=swap');
 @import 'https://cdn.jsdelivr.net/gh/pacificosas/font-zonapro@1/zonapro.css';
 
-/*Magnolia is the future !!!*/
+/*Elementos de Magnolia*/
 
 body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > div > div > div:nth-child(1),
 body > header > div.container.container-top-section > nav > ul > li > div > div.subnav-col.subnav-col-grey,
 body > div.content-wrapper > div > div > div.col-lg-3.col-md-3.col-sm-12.col-xs-12 > left-nav > div > section.col-lg-12.col-sm-5.col-xs-12.ng-scope > h4,
 body > div.content-wrapper > div > div > div.col-lg-3.col-md-3.col-sm-12.col-xs-12 > left-nav > div > section.col-lg-12.col-sm-5.col-xs-12.ng-scope > hr,
-.left-nav h3::after{
+.left-nav h3::after,
+.carousel .carousel-indicators{
     display:none !important;   
 }
 #login > div:nth-child(4){
@@ -413,7 +416,7 @@ hr{
 
 .prem-item img {
     display: block;
-    border-radius: 40px 0 0;
+    border-radius: 80px 0 0;
     width: 100% !important;
 }
 
