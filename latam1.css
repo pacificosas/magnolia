@@ -348,6 +348,19 @@ hr{
     display: block !important;
     border-radius: 5px !important;
 }
+/*=====BannerResponsive====*/
+
+   .banners-internos img {
+    width: 100%;
+  }
+  
+  .banners-internos .mobile {
+    display: none;
+  }
+
+  .banners-internos .desktop {
+    display: block;
+  }
 
 /*a-frame*/
 
@@ -402,6 +415,12 @@ hr{
   .blog-styles {
     width: 100%;
   }
+    .banners-internos .desktop {
+      display: none;
+    }
+    .banners-internos .mobile {
+      display: block;
+    }
 }
 
 /*Premios*/
