@@ -466,13 +466,16 @@ hr{
 .history-grid span:hover{
     transition: all 0.5s ease-in-out;
     background-color: #7f28c4;
-    color:white;
 }
 
 .history-grid span:hover h4{
     color:white !important;
     font-size: 40px;
     transition: all 0.5s ease-in-out;
+}
+
+.history-grid span:hover p{
+    color: white !important;
 }
 
 .history-title{
@@ -899,7 +902,7 @@ hr{
       display: block;
     }
     #main-content > div.grid-33.al-middle.col-res1 > div > h4{
-        margin: 40px 0 !important;
+        margin: 20px 0 !important;
         font-size: 14px !important;
     }
 }
