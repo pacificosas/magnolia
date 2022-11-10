@@ -8,13 +8,18 @@
 
    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*Pacifica V.1.0.18 ----- */
+/*Pacifica V.1.0.19 ----- */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Rufina:wght@400;700&display=swap');
 @import 'https://cdn.jsdelivr.net/gh/pacificosas/font-zonapro@1/zonapro.css';
 
 /*Elementos de Magnolia*/
-
+html, body{
+    background-color: #f6f9f9 !important;   
+}
+.content-wrapper{
+    background-color: #f6f9f9 !important;
+}
 body > header > div.container.container-top-section > div.hamburger-navigation-container.visible-xs.row.ng-scope.hamburger-on > div > div > div:nth-child(1),
 body > header > div.container.container-top-section > nav > ul > li > div > div.subnav-col.subnav-col-grey,
 body > div.content-wrapper > div > div > div.col-lg-3.col-md-3.col-sm-12.col-xs-12 > left-nav > div > section.col-lg-12.col-sm-5.col-xs-12.ng-scope > h4,
@@ -45,10 +50,15 @@ body > header > div.container.container-top-section > div.hamburger-navigation-c
     color: white !important;
     border-radius: 4px !important;
 }
-nav li{
+nav li, .multimedia-list .multimedia-list-items li div.video-title a{
     font-family: 'zonaPro' !important;
 }
-
+.multimedia-list .multimedia-list-items li div.video-title a{
+    font-size: 14px !important;
+}
+.btnHead{
+    color: White !important;
+}
 .highlighted-section{
     display: none!important;
 }
