@@ -15,7 +15,7 @@ var currentCountry = getCurrentCountry();
 if(currentCountry !== 'cl'){
     btn({
       href:`https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
-      image:"/dam/cpe-assets/static/images/icono_chat-avon.png",
+      image:"/dam/cpe-assets/static/images/icono_chat-bela.gif",
       imageDesktopWidth:"7.5rem",
       imageMobileWidth:"6rem"
     });
