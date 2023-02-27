@@ -8,7 +8,7 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('PIPE - Magnoliando!!!')
+   console.log('PIPE - Magnoliando 27-02-2023')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
