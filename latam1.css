@@ -8,7 +8,7 @@
 
    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*Pacifica V.1.0.25 ----- */
+/*Pacifica V.1.0.26 ----- */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Rufina:wght@400;700&display=swap');
 @import 'https://cdn.jsdelivr.net/gh/pacificosas/font-zonapro@1/zonapro.css';
@@ -294,7 +294,7 @@ h6{
     font-size: 1rem !important;    
 }
 
-p, ul, ::-webkit-meter-optimum-value{
+p, ul, ::-webkit-meter-optimum-value, em{
     font-family: 'Montserrat', sans-serif !important;
     font-size: 15px !important;
 }
@@ -303,6 +303,12 @@ p{
 }
 
 .italic{
+    font-style: italic;
+}
+strong{
+    font-weight: bold;
+}
+em{
     font-style: italic;
 }
 

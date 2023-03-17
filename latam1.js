@@ -8,18 +8,18 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('PIPE - Magnoliando 27-02-2023')
+   console.log('Pacifica v.1.0.26')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
-
+if(currentCountry !== 'cl'){
     btn({
       href:`https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
       image:"/dam/cpe-assets/static/images/icono_chat-bela.gif",
       imageDesktopWidth:"7.5rem",
       imageMobileWidth:"6rem"
     });
-
+}
 
 ReplaceLoginButton(currentCountry);
 });
