@@ -8,7 +8,7 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('Pacifica v.1.0.26')
+   console.log('Pacifica v.1.0.28')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
@@ -82,11 +82,11 @@ function btn(props){
     // window.addEventListener('resize',function(){cssHandler(mediaquery)})
     cssHandler(mediaquery)
 
-    if(!isMobile){
+    // if(!isMobile){
         anchor.append(image)
         container.append(anchor)
         document.querySelector("body").append(container)
-    }
+    //}
     
 }
 
