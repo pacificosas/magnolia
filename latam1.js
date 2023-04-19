@@ -8,7 +8,7 @@
 
    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-   console.log('Pacifica v.1.0.29')
+   console.log('Pacifica v.1.0.28')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
@@ -17,9 +17,7 @@ var currentCountry = getCurrentCountry();
       href:`https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
       image:"/dam/cpe-assets/static/images/icono_chat-bela.gif",
       imageDesktopWidth:"7.5rem",
-      imageMobileWidth: "6rem",
-      addToMobile: true,
-      addToDesktop:true,
+      imageMobileWidth:"6rem"
     })
 
 
@@ -84,14 +82,11 @@ function btn(props){
     // window.addEventListener('resize',function(){cssHandler(mediaquery)})
     cssHandler(mediaquery)
 
-    // este condicional determina si se debe agregar o no el boton
-    // nuevas props para determinar si anadir para desktop o mobile desde args
-    // de la funcion
-    if((!isMobile && props.addToDesktop) || (isMobile && props.addToMobile)){
+    // if(!isMobile){
         anchor.append(image)
         container.append(anchor)
         document.querySelector("body").append(container)
-    } 
+    //}
     
 }
 
@@ -108,3 +103,4 @@ function ReplaceLoginButton(country){
         loginRoot = `https://www.${country}.avon.com`
     }
     container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
+}
