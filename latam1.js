@@ -1,14 +1,14 @@
 /*--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::.
 
-     _____  _______ _______ _____ _______ _____ _______ _______        X
-    |_____] |_____| |         |   |______   |   |       |_____|      (o o)
-    |       |     | |_____  __|__ |       __|__ |_____  |     |     (  V  )
-   ___________________________________________________________________m.m____..
+     _  __ _ _ __ _ __ __        X
+    |_] || |         |   |_   |   |       |_|      (o o)
+    |       |     | |_  _| |       | |__  |     |     (  V  )
+   _______m.m..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: XXX */
 
-   console.log('Pacifica v.1.0.28')
+   console.log('Pacifica v.1.0.30')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
@@ -82,7 +82,7 @@ function btn(props){
     // window.addEventListener('resize',function(){cssHandler(mediaquery)})
     cssHandler(mediaquery)
 
-    // if(!isMobile){
+    //if(!isMobile){ // descomentar esto si solo se require agregar para escritorio
         anchor.append(image)
         container.append(anchor)
         document.querySelector("body").append(container)
