@@ -6,9 +6,9 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::XXX */
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20042023 */
 
-   console.log('Pacifica v.1.0.31')
+   console.log('Pacifica v.1.0.32')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
@@ -101,11 +101,16 @@ function ReplaceLoginButton(country){
     var container = $(`${tag}[ng-controller="loginCtrl"]`)[0];
     var loginRoot = '';
     var label = GetLoginButtonLabel(country);
-    if(country === 'co'){
-        loginRoot = 'http://avon.com.co';
+    if(country !== 'pe'){
+        if(country === 'co'){
+            loginRoot = 'http://avon.com.co';
+        }
+        else{
+            loginRoot = `https://www.${country}.avon.com`
+        }
+        container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
     }
     else{
-        loginRoot = `https://www.${country}.avon.com`
+        container.innerHTML = `<a href="https://www.avon.com.pe/pe-home/Nuevo-Login.html" Target="_Blank">${label}</a>`;
     }
-    container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
 }
