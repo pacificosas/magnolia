@@ -6,9 +6,9 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20042323 */
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20030424 */
 
-   console.log('Pacifica v.1.0.33')
+   console.log('Pacifica v.1.0.34')
 
 document.addEventListener("DOMContentLoaded", function(event) {
 var currentCountry = getCurrentCountry();
@@ -46,7 +46,7 @@ function GetLoginButtonLabel(country){
         case 'co':
         case 'ec':
         case 'pe':
-            return 'ACCESO A MI NEGOCIO AVON';
+            return 'ACCESO A MI NEGOCIO';
         case 'cl':
             return 'REPRESENTANTE / MI ESPACIO AVON';           
     }
