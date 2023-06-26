@@ -103,7 +103,7 @@ function ReplaceLoginButton(country){
     var label = GetLoginButtonLabel(country);
     if(country !== 'pe'){
         if(country === 'co'){
-            loginRoot = 'http://avon.com.co';
+            loginRoot = 'https://minegocio.natura-avon.com.co/';
         }
         else{
             loginRoot = `https://www.${country}.avon.com`
