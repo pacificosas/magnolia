@@ -90,7 +90,9 @@ function btn(props) {
     if ((!isMobile && props.addToDesktop) || (isMobile && props.addToMobile)) {
         anchor.append(image)
         container.append(anchor)
-        document.querySelector("body").append(container)
+        if(getCurrentCountry() !== 'pe'){
+            document.querySelector("body").append(container)
+        }
     }
 
 }
