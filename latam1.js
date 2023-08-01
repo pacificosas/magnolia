@@ -8,7 +8,7 @@
 
   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20030424 */
 
-console.log('Pacifica v.1.0.36')
+console.log('Pacifica v.1.0.37')
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var currentCountry = getCurrentCountry();
