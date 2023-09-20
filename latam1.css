@@ -32,7 +32,7 @@ header nav .container-subnav, header nav .found-rep-container .container-subnav-
     color: #E5004B !important;
 }
 .img-responsive, .carousel-inner>.item>a>img{
-    margin: 0 auto i !important;
+    margin: 0 auto !important;
 }
 #login > div:nth-child(4){
     display: none !important;
@@ -276,7 +276,7 @@ iframe{
     text-transform: uppercase;
 }
 
-h1,h2,h3,h4,h5,h6, button, .zPro, nav li, .multimedia-list .multimedia-list-items li div.video-title a, .left-nav ul.left-nav-list-1 li,{
+h1, h2, h3, h4, h5, h6, button, .zPro, nav li, .multimedia-list .multimedia-list-items li div.video-title a, .left-nav ul.left-nav-list-1 li{
     font-family: 'Montserrat' !important;
     color: #333333 !important;
     font-style: initial !important;
@@ -322,7 +322,7 @@ p{
     font-style: italic;
 }
 strong{
-    font-weight: bold;
+    font-weight: 800;
 }
 em{
     font-style: italic;
@@ -445,7 +445,7 @@ hr{
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.3rem !important;
-    border-radius: 2px;
+    border-radius: 1px;
     cursor: pointer;
     display: block;
     z-index: 1;
@@ -513,7 +513,7 @@ hr{
 
 .history-grid span:hover{
     transition: all 0.5s ease-in-out;
-    background-color: #7f28c4;
+    background-color: #E5004B;
 }
 
 .history-grid span:hover h4{
@@ -527,12 +527,12 @@ hr{
 }
 
 .history-title{
-    background-color: #7f28c4 !important;
+    background-color: #E5004B !important;
     text-align: right;
 }
 
 .history-grid span h4 {
-    color: #7f28c4 !important;
+    color: #E5004B !important;
     text-align: center;
     font-weight: bold;
     font-size: 26px;
@@ -692,7 +692,7 @@ hr{
     margin-top: -10px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid #7f28c4;
+    border: 4px solid #E5004B;
     z-index: 10;
 }
 
@@ -732,7 +732,7 @@ hr{
     display: block;
     line-height: 1em;
     font-size: 0.66666em;
-    color: #7f28c4;
+    color: #E5004B;
 }
 
 .direction-l .time-wrapper {
@@ -836,7 +836,7 @@ hr{
     }
     
     footer ul.accordion-link-body-text li a{
-        color:white !important;
+        color: white !important;
     }
 }
 
@@ -873,7 +873,7 @@ hr{
         margin-left: -9px;
         background: #fff;
         border-radius: 10px;
-        border: 4px solid #7f28c4;
+        border: 4px solid #E5004B;
         z-index: 10;
     }
     .timeline-premios .direction-l .flag:before, .timeline-premios .direction-r .flag:before {
