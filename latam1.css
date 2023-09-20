@@ -198,7 +198,9 @@ footer .secondary-footer-content{
 
 
 footer .footer-links-padding a{
+    font-family: 'Montserrat' !important;
     color:white !important;
+    font-style: initial !important;
 }
 
 footer .contact-us,
@@ -274,7 +276,7 @@ iframe{
     text-transform: uppercase;
 }
 
-h1,h2,h3,h4,h5,h6, button, .zPro, nav li, .multimedia-list .multimedia-list-items li div.video-title a, .left-nav ul.left-nav-list-1 li, footer .footer-links-padding a{
+h1,h2,h3,h4,h5,h6, button, .zPro, nav li, .multimedia-list .multimedia-list-items li div.video-title a, .left-nav ul.left-nav-list-1 li,{
     font-family: 'Montserrat' !important;
     color: #333333 !important;
     font-style: initial !important;
