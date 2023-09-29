@@ -358,7 +358,6 @@ hr{
 }
 
 .a-frame50 {
-    border-radius: 110px 0px;
 }
 
 /*alineaciones*/
@@ -781,6 +780,9 @@ hr{
     max-width: 130px;
     margin: 0 auto;
     display: block;
+}
+.ui-select-container .select2-choice .select2-arrow{
+    filter: invert(16%) sepia(98%) saturate(4298%) hue-rotate(331deg) brightness(85%) contrast(113%) !important;
 }  
 
 /* ================ Timeline Media Queries ================ */
@@ -837,6 +839,15 @@ hr{
     
     footer ul.accordion-link-body-text li a{
         color: white !important;
+    }
+    .hamburger-navigation-container .hamburger-second-list .arrow-icon{
+        filter: invert(16%) sepia(98%) saturate(4298%) hue-rotate(331deg) brightness(85%) contrast(113%);
+    }
+    .hamburger-navigation-container .login-button-container .login-button{
+        width: auto !important;
+        color: white !important;
+        background-color: #E5004B !important;
+        border-radius: 1px;
     }
 }
 
