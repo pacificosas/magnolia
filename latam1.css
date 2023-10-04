@@ -8,7 +8,7 @@
 
    ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/*Pacifica V.1.0.26 ----- */
+/*Pacifica V.1.0.42 ----- */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Rufina:wght@400;700&display=swap');
 @import 'https://cdn.jsdelivr.net/gh/pacificosas/font-zonapro@1/zonapro.css';
@@ -251,7 +251,7 @@ iframe{
 }
 
 /*fuentes*/
-.pink, .time-wrapper{
+.pink, .time-wrapper, header nav>ul>li:hover>a, header nav>ul>li.focus>a, header nav>ul>li.active>a, header nav>ul>li.open>a{
     color: #E5004B !important
 }
 
