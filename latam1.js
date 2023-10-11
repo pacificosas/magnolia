@@ -8,7 +8,7 @@
 
   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20030424 */
 
-console.log('Pacifica v.1.0.37')
+console.log('Pacifica v.1.0.43')
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var currentCountry = getCurrentCountry();
@@ -48,7 +48,7 @@ function GetLoginButtonLabel(country) {
         case 'pe':
             return 'ACCESO A MI NEGOCIO';
         case 'cl':
-            return 'REPRESENTANTE / MI ESPACIO AVON';
+            return 'CONSULTORAS / MI ESPACIO AVON';
     }
 }
 
