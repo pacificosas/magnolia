@@ -6,9 +6,9 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20030424 */
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20031023 */
 
-console.log('Pacifica v.1.0.43')
+console.log('Pacifica v.1.0.45')
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var currentCountry = getCurrentCountry();
@@ -120,3 +120,29 @@ function ReplaceLoginButton(country) {
         container.innerHTML = `<a href="https://minegocio.natura-avon.com.pe/" Target="_Blank">${label}</a>`;
     }
 }
+
+
+//Función para reemplazar el logo del menú
+
+window.onload = function(){
+var avMenu = document.getElementsByClassName("big-nav");
+avMenu[0].innerHTML += "<a href='/' class='ij-logo'><img src='https://cdn.jsdelivr.net/gh/pacificosas/magnolia@1/avon-logo.png' alt='Avon' class=' logo-avon'></a>";
+
+var avMobMenu = document.querySelectorAll(".small-bar .row .col-xs-8");
+avMobMenu[0].innerHTML += "<a href='/'><img src='https://cdn.jsdelivr.net/gh/pacificosas/magnolia@1/avon-logo.png' alt='Avon' class='ij-img-logo'></a>";
+
+var grLogo = document.querySelectorAll(".ij-logo img")[0];
+
+window.addEventListener("scroll", function(){
+var scrollPos = window.scrollY;
+
+if(scrollPos == 0){
+grLogo.style.minHeight = "80px";
+}
+else{
+grLogo.style.minHeight = "50px";
+}
+})
+
+
+};
