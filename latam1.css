@@ -21,7 +21,7 @@
 
 .big-nav {
     display: grid;
-    grid-template-columns: 180px calc(100% - 100px);
+    grid-template-columns: 100px calc(100% - 100px);
     grid-template-rows: 1fr !important;
     grid-auto-flow: dense;
     align-items: end;
