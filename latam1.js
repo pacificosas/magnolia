@@ -6,9 +6,9 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20031023 */
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20240125 */
 
-console.log('Pacifica v.1.0.45')
+console.log('Pacifica v.1.0.46')
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var currentCountry = getCurrentCountry();
@@ -111,10 +111,14 @@ function ReplaceLoginButton(country) {
             loginRoot = `https://www.${country}.avon.com`
         }
 
-        if(country === 'co')
+        if(country === 'co'){
             container.innerHTML = `<a href="https://minegocio.natura-avon.com.co" Target="_Blank">${label}</a>`;
-        else
+        } else if (country === 'cl'){
+          container.innerHTML = `<a href="https://www.avon.cl/cl-home/Consultoras.html" Target="_Blank">${label}</a>`;
+        }
+        else {
             container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
+        }
     }
     else {
         container.innerHTML = `<a href="https://minegocio.natura-avon.com.pe/" Target="_Blank">${label}</a>`;
