@@ -6,9 +6,9 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20240125 */
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20240129 */
 
-console.log('Pacifica v.1.0.46')
+console.log('Pacifica v.1.0.47')
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var currentCountry = getCurrentCountry();
@@ -114,7 +114,7 @@ function ReplaceLoginButton(country) {
         if(country === 'co'){
             container.innerHTML = `<a href="https://minegocio.natura-avon.com.co" Target="_Blank">${label}</a>`;
         } else if (country === 'cl'){
-          container.innerHTML = `<a href="https://www.avon.cl/cl-home/Consultoras.html" Target="_Blank">${label}</a>`;
+          container.innerHTML = `<a href="https://www.avon.cl/cl-home/Consultoria-de-Belleza-Natura-y-Avon.html" Target="_Blank">${label}</a>`;
         }
         else {
             container.innerHTML = `<a href="${loginRoot}/REPSuite/loginMain.page" Target="_Blank">${label}</a>`;
