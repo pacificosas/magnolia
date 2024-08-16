@@ -8,14 +8,14 @@
 
   ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20240129 */
 
-console.log('Pacifica v.1.0.47')
+console.log('Pacifica v.1.0.48')
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var currentCountry = getCurrentCountry();
 
     btn({
         href: `https://avoncpe.com/chat${currentCountry.toUpperCase()}`,
-        image: "/dam/cpe-assets/static/images/icono_chat-bela.gif",
+        image: "/dam/cpe-assets/static/images/icono_chat-avon-nuevo2024.gif",
         imageDesktopWidth: "7.5rem",
         imageMobileWidth: "6rem",
         addToMobile: true,
