@@ -6,9 +6,9 @@
    ___________________________________________________________________m.m____..
    |||||||| By: pacifica.co |||||||||||||||||||||||||||||||||||||||||||||||||||
 
-  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20240816 */
+  ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::20241002 */
 
-console.log('Pacifica v.1.0.49')
+console.log('Pacifica v.1.0.50')
 
 document.addEventListener("DOMContentLoaded", function (event) {
     var currentCountry = getCurrentCountry();
@@ -113,7 +113,11 @@ function ReplaceLoginButton(country) {
 
         if(country === 'co'){
             container.innerHTML = `<a href="https://minegocio.natura-avon.com.co" Target="_Blank">${label}</a>`;
-        } else if (country === 'cl'){
+        } 
+        else if (country === 'ec'){
+            container.innerHTML = `<a href="https://minegocio.natura-avon.com.ec" Target="_Blank">${label}</a>`;
+        }
+        else if (country === 'cl'){
           container.innerHTML = `<a href="https://www.avon.cl/cl-home/Consultoria-de-Belleza-Natura-y-Avon.html" Target="_Blank">${label}</a>`;
         }
         else {
