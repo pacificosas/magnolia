@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sink';
+    src: url('SinkRegular.eot');
+    src: url('SinkRegular.eot?#iefix') format('embedded-opentype'),
+        url('SinkRegular.woff2') format('woff2'),
+        url('SinkRegular.woff') format('woff'),
+        url('SinkRegular.ttf') format('truetype'),
+        url('SinkRegular.svg#SinkRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
